@@ -1,0 +1,96 @@
+
+
+
+  
+  header{
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+  }
+    
+  code{
+    display: block;
+    background-color: #DDDDE0;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+    
+  
+  #navbar {
+    position: fixed;
+    background: LightSalmon;
+    width:20%;
+    float:left;
+    overflow-y: scroll;
+    height: 100%
+  }
+  
+  #navbar ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  #navbar li {
+  color: black;
+  border-top: 1px solid;
+  list-style: none;
+  width: 100%;
+  padding: 10px;  
+    
+}
+
+  #navbar a{
+    text-decoration: none;
+    color: black;
+  }
+ 
+  #main-doc {
+  position: absolute;
+  margin-left: 270px;
+  padding: 20px;
+  margin-bottom: 110px;
+  word-wrap: break-word;
+}
+
+  
+
+  .contenido {
+    background: PaleTurquoise;
+    line-height: 30px;
+    width: 75%;
+    float: right;
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  @media only screen and (max-width: 815px){
+    #navbar{
+     position: absolute;
+     top: 0;
+     padding: 0;
+     margin: 0;
+     width: 100%;  
+     float: top;
+      height: 100%; 
+    }
+    
+    #main-doc{
+     position: relative;
+     margin-left: 0;
+     margin-top: 500px; 
+     width: 100%;
+     float: left; 
+    }
+    
+  }
+  
+  
