@@ -1,0 +1,185 @@
+<html>
+  
+  <body>
+ 
+      
+      <nav id="navbar">
+        <header>C Documentación</header>
+        <ul>
+          <li><a class="nav-link" href="#introducción">Introducción</a></li>
+          <li><a class="nav-link" href="#conocimientos_previos">Conocimientos Previos</a></li>
+          <li><a class="nav-link" href="#hola_mundo">Hola Mundo</a></li>
+          <li><a class="nav-link" href="#variables">Variables</a></li>
+          <li><a class="nav-link" href="#declarando_variables">Declarando Variables</a></li>
+          <li><a class="nav-link" href="#variables_globales">Variables Globales</a></li>
+          <li><a class="nav-link" href="#constantes">Constantes</a></li>
+          <li><a class="nav-link" href="#tipos_de_datos">Tipos de Datos</a></li>
+          <li><a class="nav-link" href="#sentencia_if..._else">Sentencia if... else</a></li>
+          <li><a class="nav-link" href="#sentencia_while">Sentencia while</a></li>
+          <li><a class="nav-link" href="#funciones">Funciones</a></li>
+          <li><a class="nav-link" href="#referencia">Referencia</a></li>
+        </ul>   
+      </nav> 
+      
+      
+      <!--********************************************** SEPERADOR :) *************************************************-->
+     <main class="contenido" id="main-doc">
+       <section class="main-section" id="introducción">
+         <header>Introducción</header>
+         <p>El fin de esta documentación es tener acceso de manera rápida y accesible
+           a los conocimientos del curso de C. 
+           De esta manera podrán acceder en cualquier momento sin tener que ver nuevamente
+           todos los videos. Sin nada más
+           que agregar continuamos con el tema.</p>
+       </section>  
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+        <section class="main-section" id="conocimientos_previos">
+         <header>Conocimientos Previos</header>
+          <p>Para poder comprender esta documentación y el curso en general, se deberá
+            contar con los siguientes requisitos:</p>
+          <ul>
+            <li>Matemática básica</li>
+            <li>Diagramas de Flujo</li>
+          </ul>  
+          
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+        <section class="main-section" id="hola_mundo">
+         <header>Hola Mundo</header>
+          <p>Vamos a comenzar como es costumbre con el famoso "Hola Mundo!". 
+            Te dejo el código listo para copiar y pegar.</p>
+          <code>printf ("Hola Mundo!");</code> <br>
+ 
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+        <section class="main-section" id="variables">
+         <header>Variables</header>
+          <p>Utilizamos las variables para dar algun nombre a los valores que utilizamos en nuestro proyecto. 
+            Pero estos nombres dentro de C deben seguir ciertas reglas.</p>
+          <p>El nombre de las variables deben comenzar con letras (a-z-A-Z) no se puede comenzar el nombre con números, éstos se pueden utilizar luego              del primer caracter (0-9), tampoco están permitidos utilizar caracteres especiales(*,#,$,etc...) ni acentos o espacios en cualquier parte del            nombre. Al final se debe colocar siempre punto y coma (;)</p>
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+       <section class="main-section" id="declarando_variables">
+         <header>Declarando Variables</header>
+         <p>A continuación se mostrará algunos nombres de variables declaradas correctamente</p>
+         <code>
+           int numero; <br>
+           float decimal1; <br>
+           char c; <br>
+           varchar palabras_clave;
+         </code>
+         <p>Ahora se mostrará algunos nombres de variables declaradas incorrectamente</p>
+         <code>
+           int número; <br>
+           char 1palabra; <br>
+           float precio de producto; 
+         </code>
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+        <section class="main-section" id="variables_globales">
+         <header>Variables Globales</header>
+          <p> Muchas veces vamos a utilizar variables globales, ya que no solo la necesitaremos dentro de cierta funcion sino en varias. La declaramos             fuera de cualquier función incluso fuera de la función principal.</p>
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+        <section class="main-section" id="constantes">
+         <header>Constantes</header>
+          <p>Las constantes tales como su nombre lo dice, mantiene su valor en todo el proyecto. El nombre siguen las mismas reglas que la variable y se           declaran de la siguiente manera:</p>
+          <code>#define nombre valor</code>
+          <p>Algunos ejemplos:</p>
+          <code>#define pi 3,14 <br>
+                #define gravedad 9,8
+          </code>
+          <p>Como podemos ver no es necesario el punto y coma al final.</p>
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+        <section class="main-section" id="tipos_de_datos">
+         <header>Tipos de Datos</header>
+          <p>Algunos tipos de datos básicos son:</p>
+          <ul>
+            <li>Números enteros definidos con la palabra clave int</li>
+            <li>Letras o caracteres definidos con la palabra clave char</li>
+            <li>Números reales o en coma flotante definidos con las palabras claves float o double</li>
+          </ul>  
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+       <section class="main-section" id="sentencia_if..._else">
+         <header>Sentencia if... else</header>
+         <p>Para tener una estructura de selección utilizamos la sentencia if... else, y lo hacemos de la siguiente manera:</p>
+         <code>if (condición){ <br>
+               //si se cumple la condicion se ejecuta este bloque <br>
+             }else{ <br>
+              //sino se ejecuta este bloque<br>
+             }</code>
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+       <section class="main-section" id="sentencia_while">
+         <header>Sentencia while</header>
+         <p>Para tener una estructura de repetición utilizamos la sentencia while de la siguiente manera:</p>
+         <code>
+           while (condicion){ <br>
+            //mientras se cumpla la condicion se ejecuta este bloque<br>
+           }
+         </code>  
+         
+         <p>De esta manera dentro del bloque debemos ir cambiando el valor de la variable de condición para que pueda salir del bloque cuando no se                cumpla esa condición.</p>
+         
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+        <section class="main-section" id="funciones">
+         <header>Funciones</header>
+          <p>Las funciones se utilizan para poder reutilizarlas luego en cualquier momento y no hacer el codigo redundante.</p>
+          <code>
+            tipo_de_dato_que_retorna nombre_de_la_funcion (parametros los cuales son opcionales){ <br>
+             //sentencias de la funcion <br>
+             return valor_con_tipo_de_dato<br>
+            }
+          </code>
+          
+          <p>Un ejemplo de función la cual le pasamos tres notas de programación en un año y nos devuelve el promedio:</p>
+          <code>
+            float promedio (float nota1, float nota2, float nota3){ <br>
+             float suma;  <br>
+             float promedio; <br>
+              suma = nota1 + nota2 + nota3;<br>
+              promedio = suma / 3; <br>
+              return promedio; <br>
+            }
+          </code>
+          
+       </section>
+       
+       <!--********************************************** SEPERADOR :) *************************************************-->
+       
+        <section class="main-section" id="referencia">
+         <header>Referencia</header>
+           <ul>
+             <li>Esta información fue tomada desde esta <a href="https://devdocs.io/c/">página</a></li>
+          </ul>  
+       </section>
+       
+    </main> 
+    
+    
+    
+  </body>
+  
+  
+  
+</html>
